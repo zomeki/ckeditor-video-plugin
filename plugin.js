@@ -195,12 +195,27 @@ var es = {
 		linkTemplate :  '<a href="%src%">%type%</a> ',
 		fallbackTemplate : 'Su navegador no soporta VIDEO.<br>Por favor, descargue el fichero: %links%'
 	};
+	
+var ru = {
+		toolbar	: 'Видео',
+		dialogTitle : 'Свойства видео',
+		fakeObject : 'Видео',
+		properties : 'Редактировать видео',
+		widthRequired : 'Поле "Ширина" не может быть пустым',
+		heightRequired : 'Поле "Высота" не может быть пустым',
+		poster: 'Постер',
+		sourceVideo: 'Источник видео',
+		sourceType : 'Тип видео',
+		linkTemplate :  '<a href="%src%">%type%</a> ',
+		fallbackTemplate : 'Ваш браузер не поддерживает видео.<br>Пожалуйста, скачайте файл: %links%'
+	};
 
 	// v3
 	if (CKEDITOR.skins)
 	{
 		en = { video : en} ;
 		es = { video : es} ;
+		ru = { video : ru} ;
 	}
 
 // Translations
@@ -208,4 +223,5 @@ CKEDITOR.plugins.setLang( 'video', 'en', en );
 
 CKEDITOR.plugins.setLang( 'video', 'es', es );
 
+CKEDITOR.plugins.setLang( 'video', 'ru', ru );
 })();
