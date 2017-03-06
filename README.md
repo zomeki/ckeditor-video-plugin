@@ -1,5 +1,13 @@
 # ckeditor-video-plugin
 
+> DEPRECATED
+
+> NO TESTS
+
+see https://github.com/bahriddin/ckeditor-html5-video
+
+---
+
 Plugin video for CKEditor
 
 Original work:
