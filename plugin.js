@@ -1,6 +1,6 @@
 ﻿/*
  * @file Video plugin for CKEditor
- * Copyright (C) 2011 Alfonso Martínez de Lizarrondo
+ * Copyright (C) 2011 Alfonso Martinez de Lizarrondo
  *
  * == BEGIN LICENSE ==
  *
@@ -25,7 +25,7 @@
 CKEDITOR.plugins.add( 'video',
 {
 	// Translations, available at the end of this file, without extra requests
-	lang : [ 'en', 'es' ],
+	lang : [ 'en', 'es', 'ja' ],
 
 	getPlaceholderCss : function()
 	{
@@ -189,7 +189,7 @@ var es = {
 		properties : 'Editar el video',
 		widthRequired : 'La anchura no se puede dejar en blanco',
 		heightRequired : 'La altura no se puede dejar en blanco',
-		poster: 'Imagen de presentación',
+		poster: 'Imagen de presentacion',
 		sourceVideo: 'Archivo de video',
 		sourceType : 'Tipo',
 		linkTemplate :  '<a href="%src%">%type%</a> ',
@@ -210,12 +210,28 @@ var ru = {
 		fallbackTemplate : 'Ваш браузер не поддерживает видео.<br>Пожалуйста, скачайте файл: %links%'
 	};
 
+var ja = {
+		toolbar : 'ビデオ',
+		dialogTitle : 'ビデオのプロパティ',
+		fakeObject : 'ビデオ',
+		properties : '編集',
+		widthRequired : '幅を入力してください',
+		heightRequired : '高さを入力して下さい',
+		poster: 'ポスター画像',
+		sourceVideo: 'URL',
+		sourceType : '種別',
+		linkTemplate :  '<a href="%src%">%type%</a> ',
+		fallbackTemplate : 'お使いのブラウザはビデオをサポートしていません。<br>次のリンクからファイルをダウンロードしてください： %links%'
+	};
+
+
 	// v3
 	if (CKEDITOR.skins)
 	{
 		en = { video : en} ;
 		es = { video : es} ;
 		ru = { video : ru} ;
+		ja = { video : ja} ;
 	}
 
 // Translations
@@ -224,4 +240,7 @@ CKEDITOR.plugins.setLang( 'video', 'en', en );
 CKEDITOR.plugins.setLang( 'video', 'es', es );
 
 CKEDITOR.plugins.setLang( 'video', 'ru', ru );
+
+CKEDITOR.plugins.setLang( 'video', 'ja', ja );
+
 })();
